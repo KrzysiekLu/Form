@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/intl-tel-input/build/css/intlTelInput.css"
+    />
+    <script
+      src="./node_modules/intl-tel-input/build/js/intlTelInput.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1 class="contact__title">Contact</h1>
+    <div class="container">
+      <form class="form" method="post" action="...gdzie-wysyłamy">
+        <div class="form__row">
+          <label class="form__label" for="form__name ">Name</label>
+          <input type="text" class="form__name form__input" required />
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="form__phone ">Phone</label>
+          <input type="tel" id="phone" class="form__phone form__input" />
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="form__email ">Email</label>
+          <input type="email" class="form__email form__input" />
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="form__title">Message Title</label>
+          <input type="text" class="form__title form__input" />
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="form__message">Message</label>
+          <textarea type="text" class="form__message form__input"> </textarea>
+        </div>
+        <div class="form__row">
+          <input type="submit" class="form__submit button" />
+        </div>
+      </form>
+    </div>
+
+    <div class="contact__overlay"></div>
+
+    <div class="contact__confirm-container confirm-container">
+      <button class="confirm-container__btn-close">
+        <img
+          class="btn-close__icon"
+          src="close_FILL0_wght400_GRAD0_opsz48.png"
+          alt=""
+        />
+      </button>
+      <div class="confirm-container__message">Message was sended</div>
+      <button class="confirm-container__btn-back">Back To Home Page</button>
+      <img class="background-img" src="1119298.svg" alt="" />
+    </div>
+  </body>
+</html>
