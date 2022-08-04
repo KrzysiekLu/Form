@@ -1,3 +1,6 @@
 [submodule "Test"]
 	path = Test
 	url = https://github.com/KrzysiekLu/Form.git
+[submodule "Main"]
+	path = Main
+	url = https://github.com/KrzysiekLu/Form.git
