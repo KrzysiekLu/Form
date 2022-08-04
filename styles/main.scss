@@ -1,0 +1,40 @@
+@import url(//db.onlinewebfonts.com/c/22181869727dc4b201302cc1c78f9ace?family=Microsoft+Tai+Le);
+@import "_navbar.scss";
+@import "_hamburger.scss";
+@import "_contact.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right bottom, rgb(69, 202, 255), #0055ff);
+  padding-top: 2rem;
+  font-family: "Microsoft Tai Le";
+}
+.html {
+  position: relative;
+}
+
+.button {
+  background: none;
+  padding: 0.2rem 1.5rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  border: 3px solid white;
+  color: white;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+    padding: 0.2rem 2.5rem;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 0 8px 15px -9px black;
+  }
+}

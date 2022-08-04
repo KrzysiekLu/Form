@@ -1,26 +1,10 @@
-@import url(//db.onlinewebfonts.com/c/22181869727dc4b201302cc1c78f9ace?family=Microsoft+Tai+Le);
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to right bottom, rgb(69, 202, 255), #0055ff);
-  padding-top: 2rem;
-  font-family: "Microsoft Tai Le";
-}
-.html {
-  position: relative;
-}
-
 .contact__title {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
-  margin: 0 2rem;
+  margin-top: 3rem;
+  margin: 3.5rem 2rem;
+  margin-bottom: 0;
 
   &::after {
     position: absolute;
@@ -36,10 +20,19 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
-  margin-top: 3rem;
-  padding: 2rem 1rem;
-  background-color: rgb(116, 195, 255);
+  margin-top: 2rem;
+  padding: 1rem;
+  background: linear-gradient(
+      to right bottom,
+      rgb(0, 119, 255),
+      rgba(166, 205, 244, 0.643)
+    ),
+    url(../source/1119298.svg);
   box-shadow: 0 10px 20px -5px black;
+  background-position: top, 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   border-radius: 1rem;
 }
 
@@ -47,6 +40,9 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  // &:nth-child(2) {
+  //   margin-bottom: -1rem;
+  // }
 }
 .form__label {
   margin-bottom: 0.2rem;
@@ -61,14 +57,6 @@ body {
   min-width: 100%;
   max-width: 100%;
   min-height: 6rem;
-}
-
-.form__submit {
-  border: none;
-  background: none;
-  border: 2px solid white;
-  margin: 0 auto;
-  padding: 0.2em 2rem;
 }
 
 .contact__overlay {
@@ -132,17 +120,11 @@ body {
     font-size: 1.4rem;
     margin-bottom: 3rem;
   }
-  &__btn-back {
-    background: none;
+  .button {
     border: 2px solid black;
-    border-radius: 1rem;
-    padding: 0.5rem 2rem;
-    transition: 0.5s all ease-in-out;
-    &:hover {
-      padding: 0.5rem 3rem;
-      box-shadow: 0 10px 20px -10px black;
-      transition: 0.2s all ease-in-out;
-    }
+    color: black;
+    background-color: white;
+    font-size: 1rem;
   }
   .background-img {
     z-index: -1;
@@ -161,10 +143,34 @@ body {
   transition: 0.5s box-shadow ease-in-out;
   box-shadow: 0 0 10px 2px rgb(255, 153, 0);
 }
+.error-message {
+  height: 1rem;
+  width: 100%;
+  background: none;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: rgb(82, 17, 17);
+  display: none;
+}
 .confirm-active {
   transform: translate(-50%, -50%);
   transition: 0.5s transform ease-in;
 }
 .overlay-active {
   display: block;
+}
+
+@media only screen and (min-width: 788px) {
+  .contact__title {
+    font-size: 3rem;
+    margin: 5rem 2rem;
+  }
+
+  .container {
+    padding: 2rem 3rem;
+  }
+
+  .confirm-container__message {
+    font-size: 2.5rem;
+  }
 }
