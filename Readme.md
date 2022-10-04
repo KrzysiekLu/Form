@@ -6,4 +6,4 @@
 
 ## ScreenShot
 
-[Screanshot](Zrzut%20ekranu%202022-10-04%20153458.jpg)
+![Screanshot](Zrzut%20ekranu%202022-10-04%20153458.jpg)
