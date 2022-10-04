@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "intl-tel-input": "^17.0.18"
+  },
+  "devDependencies": {
+    "intl-tel-input": "^17.0.18"
   }
 }
